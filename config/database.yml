@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  host: localhost
+  port: 5432
+  username: search_analytics
+  password: search_analytics123
+
+development:
+  <<: *default
+  database: search_analytics_development
+
+test:
+  <<: *default
+  database: search_analytics_test
+
+production:
+  <<: *default
+  database: search_analytics_production
+  username: search_analytics
+  password: <%= ENV['SEARCH_ANALYTICS_DATABASE_PASSWORD'] %>

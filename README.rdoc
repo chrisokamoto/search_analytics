@@ -1,0 +1,3 @@
+Search analytics
+
+- Save the search after 2 seconds that the user stopped typing

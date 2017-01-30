@@ -1,0 +1,13 @@
+en:
+  search_analytics:
+    index:
+      search: 'Enter the name of the article you want to search'
+      results: Showing results for "%{article_title}"
+      show_analytics: Show analytics
+    show_search_analytics:
+      article_title: "Article's title"
+      frequency: Frequency of searches
+      back: Back to search
+      delete: Clear stats
+      delete_confirm: Are you sure you want to clear stats?
+      nothing_to_show: There aren't stats to show yet
